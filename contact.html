@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>RedStore | E-commerce</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        
+        <div class="header">
+        
+        <div class="container">
+            <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="products.html"> Products</a></li>
+                    <li><a href="about.html"> About</a></li>
+                    <li><a href="contact.html"> Contact</a></li>
+                    <li><a href="account.html"> Account</a></li>
+                </ul>
+            </nav>
+                <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
+        </div>
+
+        <div class="header1">
+  <h1>CONTACT US</h1>
+  
+</div>
+
+<div class="con-cont">
+  <div class="row">
+
+    <div class="con-cot">
+      <form name="User form" method="post" action="#" onsubmit="myfunction()">  
+
+        <label for="fname">Enter Full Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Sumiran Dode" required>
+    
+        <label for="mobile">Mobile Number</label>
+        <input type="number" id="mobile" name="mobile" placeholder="7774909206"required>
+        
+
+        <label for="E-Mail">E-Mail</label>
+        <input type="text" id="E-Mail" name="E-mail id" placeholder="abc1234@gmail.com"required>
+
+        <label for="country">Country Name</label>
+        <select id="country" name="country">
+          <option value="India">India</option>
+          <option value="USA">USA</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Columbia">Columbia</option>
+        </select>
+
+        <label for="query">Queries</label>
+        <textarea id="query" name="query" placeholder="Enter your query here in detail" style="height:170px"required></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+<div class="od">
+  <h3>OFFICE DETAILS</h3>
+  <p>Address: Indrapuri School Near Ravi Nagar ,Amravati 444605 <br>
+  Phone:0210-5548-568 <br>
+  E-Mail: jyoti@gmail.com
+  </p><br>
+
+  <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and Ios mobile phone.</p>
+                        <div class="app-logo">
+                            <img src="play-store.png">
+                            <img src="app-store.png">
+                        </div>
+                    </div>
+                    <div class="footer-col-2">
+                        <img src="logo-white.png">
+                        <p>Our Purpose Is To Sustainably Make the Pleasure and
+                        Benefits of Sports Accessible to the many. </p>
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li>Coupons</li>
+                            <li>Blog Post</li>
+                            <li>Return Policy</li>
+                            <li>Join Affiliate</li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Instagram</li>
+                            <li>Twitter</li>
+                            <li>YouTube</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright2020- Sumiran Dode</p>
+            
+        <script>  
+ function myfunction(){
+var name=document.getElementById("fname").value;  
+var num=document.getElementById("mobile").value;
+var email = document.getElementById("E-Mail").value;
+atpos = email.indexOf("@");
+dotpos = email.lastIndexOf(".");
+if (name==null || name==" "){  
+  alert("Name can't be blank");  
+  return false;  
+}
+else if(num.length != 10 )
+{
+alert( "Please provide a Mobile No in correct format" );
+return false;
+ }
+else if (email == "" || atpos < 1 || ( dotpos - atpos < 2 )) 
+{
+alert("Please enter correct email ID");
+document.getElementById("E-Mail").focus() ;
+return false;
+}
+  {alert("Your query has been submitted!!"); 
+ }
+ }
+           
+</script> 
+            
+        
+    </body>
+        
+</html>
+
+
